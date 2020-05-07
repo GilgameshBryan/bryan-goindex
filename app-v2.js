@@ -9,10 +9,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 ;
 
 //加载Dplayer
-document.write('<script src="//cdn.jsdelivr.net/gh/GilgameshBryan/bryan-goindex/js/DPlayer.min.js"></script>');
-document.write('<script src="//cdn.jsdelivr.net/gh/GilgameshBryan/bryan-goindex/js/flv.min.js"></script>');
+document.write('<script src="//cdn.jsdelivr.net/gh/5MayRain/goindex-them-nexmoe/js/DPlayer.min.js"></script>');
+document.write('<script src="//cdn.jsdelivr.net/gh/5MayRain/goindex-them-nexmoe/js/flv.min.js"></script>');
 // 在head 中 加载 必要静态
-document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/GilgameshBryan/bryan-goindex/css/mdui.min.css">');
+document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/5MayRain/goindex-them-nexmoe/css/mdui.min.css">');
 // markdown支持
 document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@9.1.0/dist/markdown-it.min.js"></script>');
 document.write('<style>.mdui-container {max-width: 980px;} .zgh-item {margin: 20px -8px 0 !important;padding: 15px !important;border-radius: 5px;-webkit-box-shadow: 0 0.2em 1em rgba(204, 204, 204, .3);box-shadow: 0 0.2em 1em rgba(204, 204, 204, .3);background-color: #fff;} .mdui-toolbar {width: auto;margin-top: 30px !important;} .mdui-toolbar > a:last-child{opacity: 1;background-color: #1e89f2;color: #ffff;} .mdui-toolbar > a{padding: 0 16px;line-height: 30px;border-radius: 30px;border: 1px solid #eee;} .mdui-toolbar > *{padding: 0 6px;margin: 0 2px;opacity: .5;}</style>');
@@ -136,7 +136,7 @@ function list_files(path,files){
         if(item['mimeType'] == 'application/vnd.google-apps.folder'){
             html +=`<li class="mdui-list-item mdui-ripple"><a href="${p}" class="folder">
 	            <div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
-	            <i class="mdui-icon material-icons"></i>
+	            <i class="mdui-icon material-icons">folder_open</i>
 	              ${item.name}
 	            </div>
 	            <div class="mdui-col-sm-3 mdui-text-right">${item['modifiedTime']}</div>
